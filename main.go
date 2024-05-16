@@ -17,6 +17,7 @@ const clientID = "producer-client"
 const subject = "zxc"
 
 func main() {
+	log.Println("start")
 	var tmpl = template.Must(template.New("order").Parse(htmlTemplate))
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 
